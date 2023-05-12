@@ -177,8 +177,9 @@
         font-weight: 700;
         
         border: none;
-        color: white;
-        background-color: transparent;
+        color: black;
+        background-color: white;
+        border-radius: 15px;
         cursor: pointer;
 
         text-decoration: none;
