@@ -1,0 +1,347 @@
+@font-face {
+    font-family: idroid;
+    src: url(./fontes/idroid.otf);
+}
+
+@media screen and (min-width: 880px) {
+    body {
+        margin: 0px;
+        background-color: #C5EBD6;
+        font-family: sans-serif;
+    }
+
+    .imagempq {
+        display: none;
+    }
+    
+    a {
+        color: #076d33;
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+    
+    header {
+        padding: 10px;
+        margin-top: 0px;
+        background-image: linear-gradient(to bottom, #3CD681, #063d1e);
+    }
+    
+    header > h1 {
+        color: white;
+        text-align: center;
+        font-style: bold;
+        font-weight: bolder;
+        text-shadow: 1px 1px 5px black;
+    }
+    
+    header > p {
+        color: rgb(190, 190, 190);
+        text-align: center;
+        text-shadow: 1px 1px 5px black;
+    }
+    
+    nav > a {
+        display: inline-block;
+        margin-right: 0px;
+        padding: 0px 10px 0px 10px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+        margin-top: -2px;
+        transition: 0.5s;
+    }
+    
+    nav > a:hover {
+        border-radius: 10px;
+        background-color: #269256;
+    }
+    
+    main {
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        width: 90vw;
+        box-shadow: 2px 4px 75px -13px rgba(0,0,0,0.75);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    
+    iframe {
+        width: 60%;
+        height: 80vh;
+        padding: 20px;
+    }
+    
+    main > h1 {
+        color: rgb(0, 87, 0);
+        font-family: idroid;
+        text-align: left;
+        margin-left: 30px;
+    }
+    
+    main > h2 {
+        box-shadow: inset -200px 0px 300px 45px rgba(255, 255, 255, 0.671);
+        color: rgb(0, 87, 0);
+        background-color: #abebc7;
+        font-family: idroid;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .link {
+        padding: 5px;
+        color: #063d1e;
+        background-color: #83e1ad;
+    }
+    
+    main > p {
+        line-height: 2rem;
+        text-indent: 2rem;
+        margin: 20px;
+    }
+    
+    .image {
+        text-align: center;
+    }
+    
+    strong {
+        color: #076d33;
+    }
+    
+    article {
+        background-color: #1A5C38;
+        width: 90vw;
+    }
+    
+    div#lista {
+        border-radius: 15px;
+        background-color: #C5EBD6;
+        padding: 10px;
+        margin: 20px;
+    }
+    
+    div#lista > p {
+        text-indent: 2rem;
+        
+    }
+    
+    h4#titulo {
+        margin-top: -10px;
+        margin-left: -10px;
+        color: white;
+        background-color: #2FA866;
+        padding: 10px;
+        margin: -10px -10px 0px -10px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    div#lista1 {
+        display: inline-block;
+        margin-right: 100px;
+    }
+    
+    div#lista2 {
+        display: inline-block
+    }
+    
+    footer {
+        margin-top: 15px;
+        text-align: center;
+        background-color: #1A5C38;
+        color: white;
+        padding: 15px;
+    }
+    
+    footer > p {
+        display: inline;
+        color: white;
+        font-weight: bolder;
+    }
+
+    footer a {
+        color: white;
+        font-weight: normal;
+    }
+    
+    ul {
+        text-decoration: underline;
+        list-style-type: '✔ ';
+    }
+}
+
+@media screen and (max-width: 879px) {
+
+    img#imagem1 {
+        background: url(imagens/dan-droids-pq.png);
+    }
+
+
+    .imagemgg {
+        display: none;
+    }
+
+    body {
+        margin: 0px;
+        background-color: #C5EBD6;
+        font-family: sans-serif;
+    }
+    
+    a {
+        color: #076d33;
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+    
+    header {
+        padding: 10px;
+        margin-top: 0px;
+        background-color: #3CD681;
+        box-shadow: inset -1px -200px 231px -110px rgba(0,0,0,0.75);
+    }
+    
+    header > h1 {
+        color: white;
+        text-align: center;
+        font-style: bold;
+        font-weight: bolder;
+        text-shadow: 1px 1px 5px black;
+    }
+    
+    header > p {
+        color: rgb(190, 190, 190);
+        text-align: center;
+        text-shadow: 1px 1px 5px black;
+    }
+    
+    nav > a {
+        display: inline-block;
+        margin-right: 0px;
+        padding: 0px 10px 0px 10px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+        margin-top: -2px;
+        transition: 0.5;
+    }
+    
+    nav > a:hover {
+        border-radius: 10px;
+        background-color: #269256;
+    }
+    
+    main {
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        width: 90vw;
+        box-shadow: 2px 4px 75px -13px rgba(0,0,0,0.75);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    
+    iframe {
+        width: 50vw;
+        height: 80vh;
+        padding: 20px;
+    }
+    
+    main > h1 {
+        color: rgb(0, 87, 0);
+        font-family: idroid;
+        text-align: left;
+        margin-left: 30px;
+    }
+    
+    main > h2 {
+        box-shadow: inset -200px 0px 300px 45px rgba(255, 255, 255, 0.671);
+        color: rgb(0, 87, 0);
+        background-color: #abebc7;
+        font-family: idroid;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .link {
+        padding: 5px;
+        color: #063d1e;
+        background-color: #83e1ad;
+    }
+    
+    main > p {
+        line-height: 2rem;
+        text-indent: 2rem;
+        margin: 20px;
+    }
+    
+    .image {
+        text-align: center;
+    }
+    
+    strong {
+        color: #076d33;
+    }
+    
+    article {
+        background-color: #1A5C38;
+        width: 90vw;
+    }
+    
+    div#lista {
+        border-radius: 15px;
+        background-color: #C5EBD6;
+        padding: 10px;
+        margin: 20px;
+    }
+    
+    div#lista > p {
+        text-indent: 2rem;
+        
+    }
+    
+    h4#titulo {
+        margin-top: -10px;
+        margin-left: -10px;
+        color: white;
+        background-color: #2FA866;
+        padding: 10px;
+        margin: -10px -10px 0px -10px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    div#lista1 {
+        display: inline-block;
+        margin-right: 100px;
+    }
+    
+    div#lista2 {
+        display: inline-block
+    }
+    
+    footer {
+        margin-top: 15px;
+        text-align: center;
+        background-color: #1A5C38;
+        color: white;
+        padding: 15px;
+    }
+    
+    footer > p {
+        display: inline;
+        color: white;
+        font-weight: bolder;
+    }
+
+    footer a {
+        color: white;
+        font-weight: normal;
+    }
+    
+    ul {
+        text-decoration: underline;
+        list-style-type: '✔ ';
+    }
+}
