@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        /*Para centralizar totalmente um conteúdo, primeiro precisamos de um container que seja relativo (o elemento por padrão sempre é relative), depois precisamos do conteúdo que seja absoluto assim podemos usar top, right, bottom, left */
+        .container {
+            position: relative;
+            height: 94vh;
+            background-color: purple;
+            background-image: url('./imagens/target001.png');
+            background-size: 100% 100%;
+            padding: 10px;
+        }
+
+        #conteudo {
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url('./imagens/target001.png');
+            background-size: 100% 100%;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%)
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article id="conteudo">
+            
+        </article>
+    </section>
+</body>
+</html>
