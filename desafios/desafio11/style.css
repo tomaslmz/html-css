@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-image: url('./imagens/espaco.jpg');
+    background-size: cover;
+}
+
+article#conteudo {
+    position: absolute;
+
+    background-image: url('./imagens/astronauta.png');
+    background-position: center center;
+    background-size: cover;
+
+    width: 300px;
+    height: 300px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
