@@ -11,9 +11,29 @@
 <body>
     <header>
         <h1>Meus estudos de HTML5 e CSS3</h1>
+
+        <nav>
+            <button onclick="sobremim()">Quem sou eu?</button>
+        </nav>
     </header>
 
     <main>
+        <aside id="sobremim">
+            <article id="close">
+                <button onclick="sobremim()">X</button>
+            </article>
+            <h3>Quem sou eu?</h3>
+
+            <article>
+                <img src="https://avatars.githubusercontent.com/u/115982948?v=4" alt="">
+            </article>
+
+            <p>Meu nome é Tomás, tenho 17 anos e estou estudando HTML5 e CSS3 &#40;usando um pouco do meu conhecimento de JavaScript&#41;. Esses são meus projetos, caso queira entrar em contato comigo:</p>
+
+            <article>
+                <a href="mailto:tomas153lm@gmail.com">tomas153lm@gmail.com</a>
+            </article>
+        </aside>
         <article>
                 <h2>Projetos destaques</h2>
 
@@ -47,5 +67,7 @@
         </article>
     </main>
     <footer>Desenvolvido por <a href="https://github.com/tomaslmz" target="_blank">Tomás</a></footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
