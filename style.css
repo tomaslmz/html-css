@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@media screen and (min-width: 376px) {
+    body {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        margin: 0px;
+        padding: 0px;
+    
+        background-color: lightgray
+    }
+    
+    header {
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+
+    header > h1 {
+        text-align: center;
+    }
+    
+    main {
+        background-color: white;
+        padding: 5px;
+        margin: 0px 20px 0px 20px;
+    }
+    
+    .image {
+        width: 400px;
+        height: 210px;
+        border-radius: 10px;
+    }
+    
+    .conteudo {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    article > h2 {
+        text-align: center;
+    }
+    
+    section > a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    footer {
+        font-size: 20px;
+        text-align: center;
+        padding: 5px;
+        background-color: black;
+        color: white;
+    }
+    
+    footer > a {
+        color: white;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        margin: 0px;
+        padding: 0px;
+    
+        background-color: lightgray
+    }
+    
+    header {
+        background-color: black;
+        text-align: center;
+        color: white;
+        padding: 10px;
+    }
+    
+    main {
+        background-color: white;
+        padding: 5px;
+    }
+    
+    .image {
+        width: 250px;
+        height: 125px;
+        border-radius: 10px;
+    }
+    
+    .conteudo {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    article > h2 {
+        text-align: center;
+    }
+    
+    section > a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0px 0px 20px 0px;
+    }
+    
+    footer {
+        font-size: 20px;
+        text-align: center;
+        padding: 5px;
+        background-color: black;
+        color: white;
+    }
+    
+    footer > a {
+        color: white;
+        font-weight: bolder;
+    }
+}
