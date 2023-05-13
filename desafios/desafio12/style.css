@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Sriracha&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ header h1 {
+    padding-top: 20px;
+    font-family: 'Passion One', cursive;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: clamp(1.5rem, 8vw, 20rem);
+ }
+
+ header p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 30px;
+ }
+
+ header span {
+    font-size: clamp(1.5rem, 10vw, 12rem);
+ }
+
+ main {
+    font-size: clamp(1.5rem, 5vw, 4.3rem);
+    font-family: 'Sriracha', cursive;
+    margin: 60px 0 0 0;
+ }
+
+ .texto {
+    margin-left: 30px;
+ }
+
+ .imagem {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    box-shadow: inset 9px -14px 105px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+ }
+
+ #imagem1 {
+    background-image: url('./imagens/background001.jpg');
+ }
+
+ #imagem2 {
+    background-image: url('./imagens/background002.jpg')
+ }
+
+ .textofundo {
+    font-size: clamp(1.5rem, 3.5vw, 20rem);
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.527);
+ }
+
+ a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+ }
+
+ a:hover {
+    text-decoration: underline;
+ }
+
+ footer {
+    color: white;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    padding: 30px;
+    text-align: center;
+ }
