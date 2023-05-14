@@ -9,9 +9,10 @@
     padding-top: 20px;
     font-family: 'Passion One', cursive;
     color: white;
+    font-variant: small-caps;
     background-color: black;
     text-align: center;
-    font-size: clamp(1.5rem, 8vw, 20rem);
+    font-size: 10vw;
  }
 
  header p {
@@ -19,16 +20,12 @@
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     padding-bottom: 30px;
  }
 
- header span {
-    font-size: clamp(1.5rem, 10vw, 12rem);
- }
-
  main {
-    font-size: clamp(1.5rem, 5vw, 4.3rem);
+    font-size: 4.5vw;
     font-family: 'Sriracha', cursive;
     margin: 60px 0 0 0;
  }
@@ -41,10 +38,11 @@
     margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
-    background-position: center center;
+    background-position: right center;
+    background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-    box-shadow: inset 9px -14px 105px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
     padding: 10px;
  }
 
@@ -57,14 +55,15 @@
  }
 
  .textofundo {
-    font-size: clamp(1.5rem, 3.5vw, 20rem);
-    position: absolute;
-    padding: 20px;
-    top: 50%;
-    left: 1%;
-    transform: translateY(-50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.527);
+   font-size: 4.5vw;
+   position: absolute;
+   padding: 20px;
+   top: 50%;
+   left: 1%;
+   transform: translateY(-50%);
+   text-shadow: 1px 1px 0px black;
+   color: white;
+   background-color: rgba(0, 0, 0, 0.527);
  }
 
  a {
