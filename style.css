@@ -231,19 +231,13 @@
         padding-bottom: 3px;
         margin-right: 10px;
         cursor: pointer;
-        border: none;
-        background-color: transparent;
-        color: red;
-        font-weight: 700;
-
-        transition: ease-out 0.5s;
-    }
-
-    article#close > button:hover {
-        border: none;
         border-radius: 15px;
         background-color: red;
         color: white;
+        border: none;
+        background-color: transparent;
+        font-weight: 700;
+        transition: ease-out 0.5s;
     }
 
     aside > button {
