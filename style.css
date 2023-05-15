@@ -150,7 +150,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 618px) {
     body {
         font-family: 'Lato', sans-serif;
         font-weight: 400;
@@ -235,9 +235,7 @@
         background-color: red;
         color: white;
         border: none;
-        background-color: transparent;
         font-weight: 700;
-        transition: ease-out 0.5s;
     }
 
     aside > button {
