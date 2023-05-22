@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sed nostrum reiciendis aut error molestiae voluptate dolorum impedit, repellat, possimus rerum, blanditiis accusantium excepturi atque illum deleniti distinctio maiores sunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, temporibus dignissimos officia recusandae quaerat, aliquam dolor non provident, quam quos expedita excepturi? Maiores tempora in inventore corporis officiis doloribus ad.</p>
+
+    <ul>
+        <li><a href="./paginas/pag01.html" target="tela">Primeira página</a></li>
+        <li><a href="./paginas/pag02.html" target="tela">Segunda página</a></li>
+        <li><a href="./paginas/pag03.html" target="tela">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum accusamus debitis ullam quia, minima, neque in officiis nam, accusantium ad asperiores illum! Magni minima incidunt alias suscipit odio harum qui! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia ducimus sapiente modi odit eveniet eaque, adipisci nam voluptas officia, neque accusantium cupiditate enim recusandae quod eligendi inventore! Animi, dolorem impedit?</p>
+
+    <iframe srcdoc="<ul>
+        <li><a href='./paginas/pag01.html'>Primeira página</a></li>
+        <li><a href='./paginas/pag02.html'>Segunda página</a></li>
+        <li><a href=''./paginas/pag03.html'>Terceira página</a></li>
+    </ul>" frameborder="0" name="tela">
+        <p>Infelizmente, seu navegador não é compatível.</p>
+    </iframe>
+</body>
+</html>
