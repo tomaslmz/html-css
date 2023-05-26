@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+
+    <form action="" method="get">
+        <p>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="media">Média: </label>
+            <input type="number" name="media" id="media" required placeholder="Média" min="0" max="10" step="0.1">
+        </p>
+        <p>
+            <label for="periodo">Período letivo: </label>
+            <input type="month" name="periodo" id="periodo">
+        </p>
+        <p>
+            <label for="data">Dia de prova: </label>
+            <input type="date" name="data" id="data">
+        </p>
+        <p>
+            <label for="hora">Horário da prova: </label>
+            <input type="time" name="hora" id="hora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
