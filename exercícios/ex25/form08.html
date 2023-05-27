@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+
+    <form action="" method="get">
+        <fieldset>
+            <p>
+                <label for="numero1">Numero 1: </label>
+                <input type="number" name="numero1" id="numero1"
+                oninput="soma.innerHTML = Number(numero1.value) + Number(numero2.value)">
+            </p>
+            <p>
+                <label for="numero2">Numero 2: </label>
+                <input type="number" name="numero2" id="numero2"
+                oninput="soma.innerHTML = Number(numero1.value) + Number(numero2.value)">
+            </p>
+
+            <p>
+                <label for="soma">Soma: </label>
+                <output name="soma" id="soma">0</output>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
