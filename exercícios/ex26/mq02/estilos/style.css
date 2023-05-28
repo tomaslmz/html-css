@@ -1,3 +1,23 @@
 @charset "UTF-8";
 
-/*Tudo*/
+/*Configurações gerais*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(35,62,255);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    text-shadow: 3px 3px 0px rgb(24, 41, 167);
+    text-align: center;
+    padding: 10px;
+}

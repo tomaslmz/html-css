@@ -1,1 +1,6 @@
 /*Retrato / portrait*/
+
+body {
+    background-image: url('../imagens/cev-portrait.jpg');
+    background-position: bottom center;
+}
