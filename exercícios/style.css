@@ -20,6 +20,10 @@ main {
 
         transform: translate(-50%, -50%);
     }
+    
+    #previa {
+        display: none;
+    }
 }
 
 @media screen and (max-height: 832px) {
@@ -32,6 +36,10 @@ main {
         left: 50%;
 
         transform: translate(-50%, -50%);
+    }
+
+    #previa {
+        display: none;
     }
 }
 
@@ -75,7 +83,7 @@ iframe {
     text-align: center;
 }
 
-#botao {
+.botao {
     font-weight: bold;
     cursor: pointer;
     margin-top: 20px;
@@ -89,7 +97,7 @@ iframe {
     transition: all 0.3s;
 }
 
-#botao:hover {
+.botao:hover {
     background-color: white;
     border: 2px solid black;
     color: black;
