@@ -1,38 +1,33 @@
-function checarSite(url) {
-    fetch(url).then(response => {
-        if(response == 200) {
-            return true;
-        } else {
-            return false;
-        }
-    })
-} 
-
 function buscar() {
     const exercicio = document.getElementById("exercicio");
     const pagina = document.getElementById("pagina");
 
     let tema;
+    let limite;
     //let endereco = "./ex" + exercicio.value; 
 
     switch(Number(exercicio.value)) {
         case 22:
             tema = "fundo";
+            limite = 7;
         break;
         case 23: 
-            tema = "tabelas";
+            tema = "tabela";
+            limite = 6;
         break;
         case 24:
             tema = "iframe";
+            limite = 6;
         break;
         case 25:
             tema = "form";
+            limite = 10;
         break;
     }
 
-    let endereco = "./ex" + exercicio.value + "/" + tema + pagina.value + ".html";
+    let endereco = "./ex" + exercicio.value + "/" + tema + "0" + pagina.value + ".html";
 
-    if(checarSite(endereco)) {
+    if(Number(pagina.value) > 0 && Number(pagina.value) <= limite) {
         window.location.href = endereco;
     } else {
         window.location.href = "./erro";
@@ -45,28 +40,33 @@ function previa() {
     const iframe = document.getElementById("tela");
 
     let tema;
+    let limite;
     //let endereco = "./ex" + exercicio.value; 
 
     switch(Number(exercicio.value)) {
         case 22:
             tema = "fundo";
+            limite = 7;
         break;
         case 23: 
-            tema = "tabelas";
+            tema = "tabela";
+            limite = 6;
         break;
         case 24:
             tema = "iframe";
+            limite = 6;
         break;
         case 25:
             tema = "form";
+            limite = 10;
         break;
     }
 
-    let endereco = "./ex" + exercicio.value + "/" + tema + pagina.value + ".html";
+    let endereco = "./ex" + exercicio.value + "/" + tema + "0" + pagina.value + ".html";
 
-    if(checarSite(endereco)) {
+    if(Number(pagina.value) > 0 && Number(pagina.value) <= limite) {
         tela.src = endereco;
     } else {
-        tela.src = "./erro";
+        tela.src = "./erro.html";
     }
 }
