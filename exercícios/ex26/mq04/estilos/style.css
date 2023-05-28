@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/*Typical Device Breakpoints
+--------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background: black no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main {
+    background: rgba(255, 255, 255, 0.596);
+    width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+}
+
+img {
+    margin: auto;
+    display: block;
+}
+
+img#phone {
+    display: none;
+}
+
+img#tablet {
+    display: none;
+}
+
+img#print {
+    display: none;
+}
+
+img#pc {
+    display: none;
+}
+
+img#tv {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url("../imagens/back-phone.jpg")
+    }
+
+    img#phone {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    body {
+        background-image: url("../imagens/back-tablet.jpg");
+    }
+
+    img#tablet {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url("../imagens/back-pc.jpg");
+    }
+
+    img#pc {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url("../imagens/back-tv.jpg");
+    }
+
+    img#tv {
+        display: block;
+    }
+}
+
+@media print {
+    * {
+        font-family:'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    body {
+        background-image: url("../imagens/back-print.jpg");
+    }
+
+    h1 {
+        color: black;
+        text-shadow: none;
+    }
+
+    main {
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    main::after {
+        content: "Essa impressão foi feita através do site do www.cursoemvideo.com";
+        text-decoration: overline;
+    }
+
+    img#print {
+        display: block;
+    }
+}
