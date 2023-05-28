@@ -9,6 +9,57 @@ main {
     transform: translate(-50%, -60%);
 }
 
+menu {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+}
+
+aside {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    border-radius: 15px;
+    width: 85vw;
+    max-width: 300px;
+    height: 200px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+
+aside > h1 {
+    text-align: center;
+    padding: 15px;
+    padding-top: 50px; 
+    color: red;
+    text-shadow: 3px 3px 0px rgba(68, 67, 67, 0.205);
+}
+
+aside > section {
+    text-align: right;
+}
+
+#botaoFechar {
+    font-weight: bolder;
+    color: red;
+    background-color: transparent;    
+    border: none;
+    width: 20px;
+    height: 20px;
+
+    transition: all 0.3s;
+}
+
+#botaoFechar:hover {
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 550px) {
     iframe {
         display: none;
@@ -23,6 +74,13 @@ main {
     
     #previa {
         display: none;
+    }
+
+    #botaoFechar {
+        cursor: pointer;
+        color: white;
+        background-color: red;
+        border-radius: 50%;
     }
 }
 
