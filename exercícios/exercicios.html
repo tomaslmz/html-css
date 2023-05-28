@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procure o exercício</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Buscando algum exercício?</h1>
+    </header>
+    
+    <main>
+        <article>
+            <form action="" method="get">
+                <section>
+                    <label for="exercicio">Exercício:</label>
+                    <select name="exercicio" id="exercicio">
+                        <option value="null">--- Escolha ---</option>
+                        <option value="22">Exercícios 22 - Fundos</option>
+                        <option value="23">Exercícios 23 - Tabelas</option>
+                        <option value="24">Exercícios 24 - Iframes</option>
+                        <option value="25">Exercícios 25 - Formulários</option>
+                    </select>
+                    
+                        <label for="pagina">Página: </label>
+                        <input type="number" name="pagina" id="pagina" step="1" value="1" class="input">
+                </section>
+                <section id="botoes">
+                    <input type="submit" value="Buscar" id="botao" onclick="buscar()">
+                    <input type="submit" value="Prévia" id="botao" onclick="previa()">
+                </section>
+            </form>
+        </article>
+
+        <article>
+            <iframe src="./iframe.html" frameborder="0" id="tela"></iframe>
+        </article>
+    </main>
+
+    <footer>
+        <p>Site feito por <a href="https://github.com/tomaslmz">Tomás</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

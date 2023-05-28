@@ -1,0 +1,101 @@
+main {
+    position: fixed;
+    background-color: white;
+    padding: 30px;
+    top: 60%;
+    left: 50%;
+    border-radius: 15px;
+
+    transform: translate(-50%, -60%);
+}
+
+@media screen and (max-width: 550px) {
+    iframe {
+        display: none;
+    }
+
+    main {
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+header > h1 {
+    margin-bottom: 15px;
+}
+
+iframe {
+    margin-top: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+.input {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    width: 50px;
+    height: 25px;
+}
+
+#botoes {
+    text-align: center;
+}
+
+#botao {
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+
+    margin-left: 30px;
+
+    transition: all 0.3s;
+}
+
+#botao:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+footer {
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
