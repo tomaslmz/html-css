@@ -23,6 +23,9 @@ function buscar() {
             tema = "form";
             limite = 10;
         break;
+        default:
+            limite = -9;
+        break;
     }
 
     let endereco = "./ex" + exercicio.value + "/" + tema + "0" + pagina.value + ".html";
@@ -30,11 +33,11 @@ function buscar() {
     if(Number(pagina.value) > 0 && Number(pagina.value) <= limite) {
         window.location.href = endereco;
     } else {
-        window.location.href = "./erro";
+        tela.src = "./erro.html";
     }
 }
 
-function previa() {
+function verPrevia() {
     const exercicio = document.getElementById("exercicio");
     const pagina = document.getElementById("pagina");
     const iframe = document.getElementById("tela");
@@ -59,6 +62,9 @@ function previa() {
         case 25:
             tema = "form";
             limite = 10;
+        break;
+        default:
+            limite = -9;
         break;
     }
 
