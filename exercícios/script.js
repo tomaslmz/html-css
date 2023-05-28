@@ -23,12 +23,22 @@ function buscar() {
             tema = "form";
             limite = 10;
         break;
+        case 26:
+            tema = "mq0";
+            limite = 5;
+        break;
         default:
             limite = -9;
         break;
     }
 
-    let endereco = "./ex" + exercicio.value + "/" + tema + "0" + pagina.value + ".html";
+    let endereco;
+
+    if(Number(exercicio.value) != 26) {
+        endereco = "./ex" + Number(exercicio.value) + "/" + tema + "0" + pagina.value + ".html";
+    } else if(Number(exercicio.value) == 26 && exercicio.value != "null") {
+        endereco = "./ex" + Number(exercicio.value) + "/" + tema + Number(pagina.value) + "/index.html"; 
+    }
 
     if(Number(pagina.value) > 0 && Number(pagina.value) <= limite) {
         window.location.href = endereco;
@@ -63,12 +73,22 @@ function verPrevia() {
             tema = "form";
             limite = 10;
         break;
+        case 26:
+            tema = "mq0";
+            limite = 5;
+        break;
         default:
             limite = -9;
         break;
     }
 
-    let endereco = "./ex" + exercicio.value + "/" + tema + "0" + pagina.value + ".html";
+    let endereco;
+
+    if(Number(exercicio.value) != 26) {
+        endereco = "./ex" + Number(exercicio.value) + "/" + tema + "0" + pagina.value + ".html";
+    } else if(Number(exercicio.value) == 26 && exercicio.value != "null") {
+        endereco = "./ex" + Number(exercicio.value) + "/" + tema + Number(pagina.value) + "/index.html"; 
+    }
 
     if(Number(pagina.value) > 0 && Number(pagina.value) <= limite) {
         tela.src = endereco;
