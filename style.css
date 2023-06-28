@@ -20,6 +20,10 @@
         text-align: center;
     }
 
+    #profile {
+        width: 300px;
+    }
+    
     nav > button {
         font-size: 15px;
         font-weight: 700;
